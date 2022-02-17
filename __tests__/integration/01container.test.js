@@ -9,7 +9,7 @@ let resultHeader= {
   imageTag: "3.12",
 };
 
-describe.only(requirements[0].description, () => {
+describe(requirements[0].description, () => {
   it("O avaliador deve executar o comando no arquivo 'command01.dc'", async () => {
     const { stdout: result } = await readCommand(1);
     expect(result).not.toBeNull();
