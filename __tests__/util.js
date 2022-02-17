@@ -1,7 +1,6 @@
 const { resolve } = require('path');
 const { promisify } = require('util');
 const { log: consoleLog, warn: consoleWarn } = require('console');
-// const { readFile } = require('fs/promises');
 const { readFile } = require('fs').promises;
 
 const { evalId } = require('./constants');
